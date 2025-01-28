@@ -65,6 +65,24 @@ LIMIT 2;
 
 # Company Database Intro -----------------------------------------------------
 
+USE training_db;
+
+
+ALTER TABLE employee DROP FOREIGN KEY employee_ibfk_1;
+SET FOREIGN_KEY_CHECKS = 0;
+
+
+DROP table branch;
+DROP table branch_supplier;
+DROP table client;
+DROP table employee;
+DROP table works_with;
+
+SET FOREIGN_KEY_CHECKS = 1;
+
+
+
+
 
 
 
