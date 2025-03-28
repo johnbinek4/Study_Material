@@ -1,0 +1,71 @@
+<p>This file is about hovers, transitions, and shadows on buttons.</p>
+
+<style>
+  .subscribe-button {
+    background-color: rgb(200, 0, 0);
+    color: white;
+    border: none;
+    height: 35px;
+    width: 105px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: opacity 0.15s;
+  }
+
+  .subscribe-button:hover {
+    opacity: 0.7;
+  }
+
+  .subscribe-button:active {
+    opacity: 0.4;
+  }
+
+  .join-button {
+    background-color: rgb(255, 255, 255);
+    color: blue;
+    border-color: blue;
+    border-style: solid;
+    border-width: 1px;
+    height: 35px;
+    width: 50px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 1s, color 1s;
+  }
+
+  .join-button:hover {
+    background-color: blue;
+    color: white;
+  }
+
+  .join-button:active {
+    background-color: blue;
+    color: white;
+    opacity: 0.5;
+  }
+
+  .tweet-button {
+    background-color: rgb(2, 158, 255);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    height: 35px;
+    width: 74px;
+    border-radius: 16px;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: box-shadow 0.15s;
+  }
+
+  .tweet-button:hover {
+    box-shadow: 2px 2px 2px rgb(82, 82, 82, 0.5);
+  }
+</style>
+
+<button class="subscribe-button">Subscribe</button>
+
+<button class="join-button">JOIN</button>
+
+<button class="tweet-button">Tweet</button>
