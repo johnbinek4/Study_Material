@@ -1,83 +1,24 @@
-<p>
-  This file is about hovers, transitions, and shadows on buttons. We also
-  shouldn't actually define heightand weight to our elements. Need to fix
-  buttons with a thing called padding. This padding is the css box model.
-  Browsers align according to text, need to add vertical align set to top to
-  fix. The border may add an additional px on top and bottom so check for that.
-</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buttons Extra</title>
+    <link rel="stylesheet" href="styles/buttons.css" />
+  </head>
 
-<style>
-  .subscribe-button {
-    background-color: rgb(200, 0, 0);
-    color: white;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    margin-right: 8px;
-    transition: opacity 0.15s;
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
-  }
+  <body>
+    <button class="subscribe-button">Subscribe</button>
 
-  .subscribe-button:hover {
-    opacity: 0.7;
-  }
+    <button class="join-button">JOIN</button>
 
-  .subscribe-button:active {
-    opacity: 0.4;
-  }
+    <button class="tweet-button">Tweet</button>
 
-  .join-button {
-    background-color: rgb(255, 255, 255);
-    color: blue;
-    border-color: blue;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 2px;
-    cursor: pointer;
-    transition: background-color 1s, color 1s;
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
-  }
-
-  .join-button:hover {
-    background-color: blue;
-    color: white;
-  }
-
-  .join-button:active {
-    background-color: blue;
-    color: white;
-    opacity: 0.5;
-  }
-
-  .tweet-button {
-    background-color: rgb(2, 158, 255);
-    color: white;
-    font-weight: bold;
-    font-size: 15px;
-    border: none;
-    border-radius: 16px;
-    cursor: pointer;
-    margin-left: 8px;
-    transition: box-shadow 0.15s;
-    padding-left: 10px;
-    padding-top: 5px;
-    padding-right: 10px;
-    padding-bottom: 5px;
-  }
-
-  .tweet-button:hover {
-    box-shadow: 2px 2px 2px rgb(82, 82, 82, 0.5);
-  }
-</style>
-
-<button class="subscribe-button">Subscribe</button>
-
-<button class="join-button">JOIN</button>
-
-<button class="tweet-button">Tweet</button>
+    <p>
+      This file is about hovers, transitions, and shadows on buttons. We also
+      shouldn't actually define heightand weight to our elements. Need to fix
+      buttons with a thing called padding. This padding is the css box model.
+      Browsers align according to text, need to add vertical align set to top to
+      fix. The border may add an additional px on top and bottom so check for
+      that.
+    </p>
+  </body>
+</html>

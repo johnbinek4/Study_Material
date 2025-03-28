@@ -1,51 +1,59 @@
-<p>
-  This will work on creating buttons and formating with css. The style elment is
-  unique in that it doesnt appear on the page. The CSS selector is the button
-  and tells the code what we are targeting. At this point all backgrounds for
-  buttons will be red. Then we have css property and values. ; is an endpoint.
-  General technique is to change styles one by one to fix them how we want.
-</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buttons</title>
+    <style>
+      .subscribe-button {
+        background-color: rgb(200, 0, 0);
+        color: white;
+        border: none;
+        height: 35px;
+        width: 105px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right: 8px;
+      }
 
-<style>
-  .subscribe-button {
-    background-color: rgb(200, 0, 0);
-    color: white;
-    border: none;
-    height: 35px;
-    width: 105px;
-    border-radius: 2px;
-    cursor: pointer;
-    margin-right: 8px;
-  }
+      .join-button {
+        background-color: rgb(255, 255, 255);
+        color: blue;
+        border-color: blue;
+        border-style: solid;
+        border-width: 1px;
+        height: 35px;
+        width: 50px;
+        border-radius: 2px;
+        cursor: pointer;
+      }
 
-  .join-button {
-    background-color: rgb(255, 255, 255);
-    color: blue;
-    border-color: blue;
-    border-style: solid;
-    border-width: 1px;
-    height: 35px;
-    width: 50px;
-    border-radius: 2px;
-    cursor: pointer;
-  }
+      .tweet-button {
+        background-color: rgb(2, 158, 255);
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        border: none;
+        height: 35px;
+        width: 74px;
+        border-radius: 16px;
+        cursor: pointer;
+        margin-left: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="subscribe-button">Subscribe</button>
 
-  .tweet-button {
-    background-color: rgb(2, 158, 255);
-    color: white;
-    font-weight: bold;
-    font-size: 15px;
-    border: none;
-    height: 35px;
-    width: 74px;
-    border-radius: 16px;
-    cursor: pointer;
-    margin-left: 8px;
-  }
-</style>
+    <button class="join-button">JOIN</button>
 
-<button class="subscribe-button">Subscribe</button>
+    <button class="tweet-button">Tweet</button>
+  </body>
 
-<button class="join-button">JOIN</button>
-
-<button class="tweet-button">Tweet</button>
+  <p>
+    This will work on creating buttons and formating with css. The style elment
+    is unique in that it doesnt appear on the page. The CSS selector is the
+    button and tells the code what we are targeting. At this point all
+    backgrounds for buttons will be red. Then we have css property and values. ;
+    is an endpoint. General technique is to change styles one by one to fix them
+    how we want.
+  </p>
+</html>
