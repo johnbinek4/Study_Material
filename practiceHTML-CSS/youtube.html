@@ -1,77 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      p {
-        font-family: Roboto, Arial;
-        margin-top: 0px;
-        margin-bottom: 0px;
-      }
-
-      .thumbnail {
-        width: 100%;
-      }
-
-      .videoTitle {
-        margin-top: 0px;
-        font-size: 14px;
-        font-weight: 1000;
-        line-height: 20px;
-        margin-bottom: 12px;
-      }
-
-      .SearchBar {
-        font-size: 20px;
-        margin-left: 0px;
-        display: block;
-      }
-
-      .video-info-grid {
-        display: grid;
-        grid-template-columns: 50px 1fr;
-      }
-
-      .propic {
-        width: 50px;
-        vertical-align: top;
-        margin-top: 5px;
-      }
-
-      .propicture {
-        width: 40px;
-        border-radius: 50px;
-      }
-
-      .vidInfo {
-        width: 245px;
-      }
-
-      .divEx {
-        display: block;
-      }
-
-      .thumbnailRow {
-        margin-bottom: 5px;
-      }
-
-      .videoAuthor,
-      .videoStats {
-        font-size: 12px;
-        color: gray;
-      }
-
-      .videoAuthor {
-        margin-bottom: 4px;
-      }
-
-      .video-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 15px;
-        row-gap: 40px;
-      }
-    </style>
-
     <title>YouTube.com Clone</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -79,9 +8,19 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/video.css" />
   </head>
   <body>
-    <input class="SearchBar" type="text" placeholder="Search" />
+    <div class="header">
+      <div class="left-section">Left</div>
+      <div class="mid-section">
+        <input class="SearchBar" type="text" placeholder="Search" />
+      </div>
+      <div class="right-section">Right</div>
+    </div>
+
     <div class="video-grid">
       <div class="divVideoPreview">
         <div class="thumbnailRow">
