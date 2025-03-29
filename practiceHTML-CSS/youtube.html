@@ -2,52 +2,116 @@
 <html>
   <head>
     <style>
+      p {
+        font-family: Roboto, Arial;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+
       .thumbnail {
         width: 300px;
         display: block;
       }
+
+      .videoTitle {
+        margin-top: 0px;
+        font-size: 14px;
+        font-weight: 1000;
+        line-height: 20px;
+        margin-bottom: 12px;
+      }
+
       .SearchBar {
         font-size: 20px;
         margin-left: 0px;
         display: block;
       }
-      .videoTitle {
-        width: 300px;
-      }
+
       .divVideoPreview {
         width: 300px;
         display: inline-block;
         vertical-align: top;
         margin-right: 12px;
       }
+
+      .propic {
+        display: inline-block;
+        width: 50px;
+        vertical-align: top;
+        margin-top: 5px;
+      }
+
+      .propicture {
+        width: 40px;
+        border-radius: 50px;
+      }
+
+      .vidInfo {
+        display: inline-block;
+        width: 200px;
+      }
+
       .divEx {
         display: block;
       }
+
+      .thumbnailRow {
+        margin-bottom: 5px;
+      }
+
+      .videoAuthor,
+      .videoStats {
+        font-size: 12px;
+        color: gray;
+      }
+
+      .videoAuthor {
+        margin-bottom: 4px;
+      }
     </style>
+
     <title>YouTube.com Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <input class="SearchBar" type="text" placeholder="Search" />
+    <div class="divVideoPreview">
+      <div class="thumbnailRow">
+        <img class="thumbnail" src="thumbnails/test.png" />
+      </div>
+      <div>
+        <div class="propic">
+          <img class="propicture" src="channelPics/channels4_profile.jpg" />
+        </div>
+        <div class="vidInfo">
+          <p class="videoTitle">Talking about the new Dev Crisis</p>
+          <p class="videoAuthor">Roy Lee</p>
+          <p class="videoStats">150M views &#183; 6 months ago</p>
+        </div>
+      </div>
+    </div>
 
     <div class="divVideoPreview">
-      <img class="thumbnail" src="thumbnails/test.png" />
-      <p class="videoTitle">
-        Talking about the <strong>new</strong> Dev Crisis
-      </p>
-      <p class="videoAuthor">Roy Lee</p>
-      <p class="videoStats">150M views &#183; 6 months ago</p>
-    </div>
-    <div class="divVideoPreview">
-      <img class="thumbnail" src="thumbnails/test.png" />
-      <p class="videoTitle">
-        Talking about the <strong>new</strong> Dev Crisis which is really bad
-        for us all
-      </p>
-      <p class="videoAuthor">Roy Lee</p>
-      <p class="videoStats">150M views &#183; 6 months ago</p>
-    </div>
-    <div class="divEx">
-      This is a div. It can contain any other element inside.
+      <div class="thumbnailRow">
+        <img class="thumbnail" src="thumbnails/test.png" />
+      </div>
+      <div>
+        <div class="propic">
+          <img class="propicture" src="channelPics/channels4_profile.jpg" />
+        </div>
+        <div class="vidInfo">
+          <p class="videoTitle">
+            Talking about the new Dev Crisis, which is really bad for everyone
+          </p>
+          <p class="videoAuthor">Roy Lee</p>
+          <p class="videoStats">150M views &#183; 6 months ago</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
