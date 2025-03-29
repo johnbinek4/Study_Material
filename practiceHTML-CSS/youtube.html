@@ -9,8 +9,7 @@
       }
 
       .thumbnail {
-        width: 300px;
-        display: block;
+        width: 100%;
       }
 
       .videoTitle {
@@ -27,15 +26,12 @@
         display: block;
       }
 
-      .divVideoPreview {
-        width: 300px;
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 12px;
+      .video-info-grid {
+        display: grid;
+        grid-template-columns: 50px 1fr;
       }
 
       .propic {
-        display: inline-block;
         width: 50px;
         vertical-align: top;
         margin-top: 5px;
@@ -47,7 +43,6 @@
       }
 
       .vidInfo {
-        display: inline-block;
         width: 245px;
       }
 
@@ -68,6 +63,13 @@
       .videoAuthor {
         margin-bottom: 4px;
       }
+
+      .video-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 15px;
+        row-gap: 40px;
+      }
     </style>
 
     <title>YouTube.com Clone</title>
@@ -80,36 +82,101 @@
   </head>
   <body>
     <input class="SearchBar" type="text" placeholder="Search" />
-    <div class="divVideoPreview">
-      <div class="thumbnailRow">
-        <img class="thumbnail" src="thumbnails/test.png" />
-      </div>
-      <div>
-        <div class="propic">
-          <img class="propicture" src="channelPics/channels4_profile.jpg" />
+    <div class="video-grid">
+      <div class="divVideoPreview">
+        <div class="thumbnailRow">
+          <img class="thumbnail" src="thumbnails/test.png" />
         </div>
-        <div class="vidInfo">
-          <p class="videoTitle">Talking about the new Dev Crisis</p>
-          <p class="videoAuthor">Roy Lee</p>
-          <p class="videoStats">150M views &#183; 6 months ago</p>
+        <div class="video-info-grid">
+          <div class="propic">
+            <img class="propicture" src="channelPics/channels4_profile.jpg" />
+          </div>
+          <div class="vidInfo">
+            <p class="videoTitle">Talking about the new Dev Crisis</p>
+            <p class="videoAuthor">Roy Lee</p>
+            <p class="videoStats">150M views &#183; 6 months ago</p>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="divVideoPreview">
-      <div class="thumbnailRow">
-        <img class="thumbnail" src="thumbnails/test.png" />
-      </div>
-      <div>
-        <div class="propic">
-          <img class="propicture" src="channelPics/channels4_profile.jpg" />
+      <div class="divVideoPreview">
+        <div class="thumbnailRow">
+          <img class="thumbnail" src="thumbnails/test.png" />
         </div>
-        <div class="vidInfo">
-          <p class="videoTitle">
-            Talking about the new Dev Crisis, which is really bad for everyone
-          </p>
-          <p class="videoAuthor">Roy Lee</p>
-          <p class="videoStats">150M views &#183; 6 months ago</p>
+        <div class="video-info-grid">
+          <div class="propic">
+            <img class="propicture" src="channelPics/channels4_profile.jpg" />
+          </div>
+          <div class="vidInfo">
+            <p class="videoTitle">
+              Talking about the new Dev Crisis, which is really bad for everyone
+            </p>
+            <p class="videoAuthor">Roy Lee</p>
+            <p class="videoStats">150M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="divVideoPreview">
+        <div class="thumbnailRow">
+          <img class="thumbnail" src="thumbnails/test.png" />
+        </div>
+        <div class="video-info-grid">
+          <div class="propic">
+            <img class="propicture" src="channelPics/channels4_profile.jpg" />
+          </div>
+          <div class="vidInfo">
+            <p class="videoTitle">Talking about the new Dev Crisis</p>
+            <p class="videoAuthor">Roy Lee</p>
+            <p class="videoStats">150M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="divVideoPreview">
+        <div class="thumbnailRow">
+          <img class="thumbnail" src="thumbnails/test.png" />
+        </div>
+        <div class="video-info-grid">
+          <div class="propic">
+            <img class="propicture" src="channelPics/channels4_profile.jpg" />
+          </div>
+          <div class="vidInfo">
+            <p class="videoTitle">
+              Talking about the new Dev Crisis, which is really bad for everyone
+            </p>
+            <p class="videoAuthor">Roy Lee</p>
+            <p class="videoStats">150M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="divVideoPreview">
+        <div class="thumbnailRow">
+          <img class="thumbnail" src="thumbnails/test.png" />
+        </div>
+        <div class="video-info-grid">
+          <div class="propic">
+            <img class="propicture" src="channelPics/channels4_profile.jpg" />
+          </div>
+          <div class="vidInfo">
+            <p class="videoTitle">Talking about the new Dev Crisis</p>
+            <p class="videoAuthor">Roy Lee</p>
+            <p class="videoStats">150M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="divVideoPreview">
+        <div class="thumbnailRow">
+          <img class="thumbnail" src="thumbnails/test.png" />
+        </div>
+        <div class="video-info-grid">
+          <div class="propic">
+            <img class="propicture" src="channelPics/channels4_profile.jpg" />
+          </div>
+          <div class="vidInfo">
+            <p class="videoTitle">
+              Talking about the new Dev Crisis, which is really bad for everyone
+            </p>
+            <p class="videoAuthor">Roy Lee</p>
+            <p class="videoStats">150M views &#183; 6 months ago</p>
+          </div>
         </div>
       </div>
     </div>
