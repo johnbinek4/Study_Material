@@ -6,19 +6,95 @@
 }
 
 .left-section {
-  background-color: lightblue;
-  width: 150px;
+  align-items: center;
+  display: flex;
 }
 
 .mid-section {
-  background-color: lightpink;
   flex: 1;
   margin-left: 70px;
   margin-right: 35px;
   max-width: 500px;
+  display: flex;
+  align-items: center;
 }
 
 .right-section {
-  background-color: lightblue;
-  width: 200px;
+  width: 180px;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+
+.hamburger {
+  height: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.Search {
+  height: 40px;
+  width: 66px;
+  background-color: rgb(240, 240, 240);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  margin-left: -1px;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
+.VSearch {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(240, 240, 240);
+}
+
+.SearchBar {
+  flex: 1;
+  height: 37px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  width: 0;
+}
+
+.SearchBar::placeholder {
+  font-family: Roboto, Arial;
+  font-size: 16px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.SearchIcon {
+  height: 25px;
+  margin-top: 3px;
+}
+
+.VSearchIcon {
+  height: 25px;
+  margin-top: 3px;
+}
+
+.uploadIcon {
+  height: 24px;
+}
+
+.youtubeApps {
+  height: 24px;
+}
+
+.notif {
+  height: 24px;
+}
+
+.curUserPic {
+  height: 32px;
+  border-radius: 16px;
 }
