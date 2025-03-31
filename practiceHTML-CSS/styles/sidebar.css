@@ -5,4 +5,50 @@
   top: 55px;
   background-color: white;
   width: 72px;
+  z-index: 101;
+  padding-top: 5px;
+}
+
+.sidebarlink {
+  background-color: white;
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.Search .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+.Search:hover .tooltip {
+  opacity: 1;
+}
+
+.sidebarlink:hover {
+  background-color: rgb(228, 228, 228);
+}
+
+.sidebarlink img {
+  height: 25px;
+  margin-bottom: 5px;
+}
+
+.sidebarlink div {
+  font-family: Roboto, Arial;
+  font-size: 10px;
 }

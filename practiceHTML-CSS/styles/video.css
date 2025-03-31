@@ -7,7 +7,7 @@
   font-size: 14px;
   font-weight: 1000;
   line-height: 20px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .video-info-grid {
@@ -22,7 +22,7 @@
 }
 
 .propicture {
-  width: 40px;
+  width: 35px;
   border-radius: 50px;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .thumbnailRow {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   position: relative;
 }
 
