@@ -67,6 +67,7 @@
 .SearchBar {
   flex: 1;
   height: 37px;
+  border: 1px solid gray;
   border-width: 1px;
   border-style: solid;
   border-color: gray;
@@ -76,7 +77,6 @@
 }
 
 .SearchBar::placeholder {
-  font-family: Roboto, Arial;
   font-size: 16px;
   padding-left: 10px;
   font-size: 16px;
@@ -115,7 +115,6 @@
   background-color: red;
   color: white;
   border-radius: 10px;
-  font-family: Roboto, Arial;
   font-size: 11px;
   padding-left: 5px;
   padding-right: 5px;
